@@ -1,60 +1,64 @@
 {
+	"_version": "1.12.0",
 	"sap.app": {
-		"id": "sap.uxap.sample.ObjectPageTitleOnLeft",
+		"_version":"1.3.0",
+		"id": "com.keremkayacan.base",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
 		"applicationVersion": {
 			"version": "1.0.0"
 		}
 	},
+	"sap.ui": {
+		"_version":"1.3.0",
+		"technology": "UI5",
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes":[
+			
+		]
+	},
 	"sap.ui5": {
 		"rootView": {
-			"viewName": "sap.uxap.sample.ObjectPageTitleOnLeft.view.ObjectPageTitleOnLeft",
+			"viewName": "com.keremkayacan.base.view.App",
 			"type": "XML",
-			"async": true
+			"async": true,
+			"id": "app"
 		},
 		"dependencies": {
+			"minUI5Version": "1.60",
 			"libs": {
 				"sap.m": {}
 			}
 		},
-		"config": {
-			"sample": {
-				"stretch": true,
-				"files": [
-					"view/ObjectPageTitleOnLeft.view.xml",
-					"controller/ObjectPageTitleOnLeft.controller.js",
-					"../SharedBlocks/employment/BlockEmpDetailPart1.js",
-					"../SharedBlocks/employment/BlockEmpDetailPart1.view.xml",
-					"../SharedBlocks/employment/BlockEmpDetailPart2.js",
-					"../SharedBlocks/employment/BlockEmpDetailPart2.view.xml",
-					"../SharedBlocks/employment/BlockEmpDetailPart3.js",
-					"../SharedBlocks/employment/BlockEmpDetailPart3.view.xml",
-					"../SharedBlocks/employment/BlockJobInfoPart1.js",
-					"../SharedBlocks/employment/BlockJobInfoPart1.view.xml",
-					"../SharedBlocks/employment/BlockJobInfoPart2.js",
-					"../SharedBlocks/employment/BlockJobInfoPart2.view.xml",
-					"../SharedBlocks/employment/BlockJobInfoPart3.js",
-					"../SharedBlocks/employment/BlockJobInfoPart3.view.xml",
-					"../SharedBlocks/employment/EmploymentBlockJob.js",
-					"../SharedBlocks/employment/EmploymentBlockJobCollapsed.view.xml",
-					"../SharedBlocks/employment/EmploymentBlockJobExpanded.view.xml",
-					"../SharedBlocks/goals/GoalsBlock.js",
-					"../SharedBlocks/goals/GoalsBlock.view.xml",
-					"../SharedBlocks/personal/BlockAdresses.js",
-					"../SharedBlocks/personal/BlockAdresses.view.xml",
-					"../SharedBlocks/personal/BlockMailing.js",
-					"../SharedBlocks/personal/BlockMailing.view.xml",
-					"../SharedBlocks/personal/BlockPhoneNumber.js",
-					"../SharedBlocks/personal/BlockPhoneNumber.view.xml",
-					"../SharedBlocks/personal/BlockSocial.js",
-					"../SharedBlocks/personal/BlockSocial.view.xml",
-					"../SharedBlocks/personal/PersonalBlockPart1.js",
-					"../SharedBlocks/personal/PersonalBlockPart1.view.xml",
-					"../SharedBlocks/personal/PersonalBlockPart2.js",
-					"../SharedBlocks/personal/PersonalBlockPart2.view.xml",
-                    "../SharedJSONData/HRData.json",
-					"manifest.json"
-				]
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "com.keremkayacan.base.i18n.i18n"
+				}
+			},
+			"": {
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "Appdata.json"
 			}
+		},
+		"resources": {
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			]
+		},
+		"_version": "1.2.0",
+		"contentDensities": {
+			"compact": false,
+			"cozy": false
 		}
 	}
 }

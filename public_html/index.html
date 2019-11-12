@@ -1,31 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Object Page with Title on the left</title>
 
-	<script id="sap-ui-bootstrap"
-		src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
-		data-sap-ui-theme="sap_belize"
-		data-sap-ui-resourceroots='{
-			"sap.uxap.sample.ObjectPageTitleOnLeft": "./",
-			"sap.ui.demo.mock": "mockdata"
-		}'
-		data-sap-ui-compatVersion="edge"
-		data-sap-ui-async="true"
-		data-sap-ui-frameOptions="trusted"
-		data-sap-ui-oninit="module:sap/ui/core/ComponentSupport">
-	</script>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenUI5 Base App</title>
+    <script id="sap-ui-bootstrap" 
+            src="https://openui5.hana.ondemand.com/1.71.3/resources/sap-ui-core.js" 
+            data-sap-ui-theme="sap_belize" 
+            data-sap-ui-resourceroots='{"com.keremkayacan.base": "./"}' 
+            data-sap-ui-oninit="module:sap/ui/core/ComponentSupport" 
+            data-sap-ui-compatVersion="edge" 
+            data-sap-ui-async="true">
+    </script>
 </head>
 
 <body class="sapUiBody" id="content">
-	<div data-sap-ui-component
-		data-name="sap.uxap.sample.ObjectPageTitleOnLeft"
-		data-height="100%"
-		data-id="container"
-		data-settings='{"id" : "sap.uxap.sample.ObjectPageTitleOnLeft"}'
-		style="height: 100%">
-	</div>
+    <div data-sap-ui-component data-name="com.keremkayacan.base" data-id="container" data-settings='{"id" : "base"}'></div>
 </body>
+
 </html>
