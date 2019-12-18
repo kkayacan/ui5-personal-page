@@ -1,3 +1,81 @@
 {
-	"dummy": "false"
+	"name": "Kerem Kayacan",
+	"email": "info@keremkayacan.com",
+	"avatar": "./img/avatar.jpg",
+	"social": [{
+		"img": "./img/sap.png",
+		"href": "https://people.sap.com/kerem.kayacan"
+	}, {
+		"img": "./img/linkedin.png",
+		"href": "https://www.linkedin.com/in/keremkayacan/"
+	}, {
+		"img": "./img/github.png",
+		"href": "https://github.com/kkayacan/"
+	}, {
+		"img": "./img/stackoverflow.png",
+		"href": "https://stackoverflow.com/users/4593786/kerem-kayacan"
+	}, {
+		"img": "./img/twitter.png",
+		"href": "https://twitter.com/kkayacan"
+	}, {
+		"img": "./img/wordpress.png",
+		"href": "https://abappolice.com/"
+	}, {
+		"img": "./img/youtube.png",
+		"href": "https://www.youtube.com/channel/UC8xpNelRS2S9I3WYji_Jnsg"
+	}, {
+		"img": "./img/google-play.png",
+		"href": "https://play.google.com/store/apps/developer?id=Kerem+Kayacan"
+	}],
+	"sections": [{
+		"title": "sectionSkills",
+		"subsections": [{
+			"title": "subsectionSapCore",
+			"content": [{
+				"control": "ProgressIndicator",
+				"label": "piAbap",
+				"percent": "99"
+			}, {
+				"control": "ProgressIndicator",
+				"label": "piSmartforms",
+				"percent": "99"
+			}, {
+				"control": "ProgressIndicator",
+				"label": "piSapscript",
+				"percent": "10"
+			}, {
+				"control": "ProgressIndicator",
+				"label": "piWorkflow",
+				"percent": "10"
+			}]
+		}, {
+			"title": "subsectionSapWeb",
+			"content": [{
+				"control": "ProgressIndicator",
+				"label": "piFiori",
+				"percent": "75"
+			}, {
+				"control": "ProgressIndicator",
+				"label": "piBsp",
+				"percent": "50"
+			}, {
+				"control": "ProgressIndicator",
+				"label": "piWebdynpro",
+				"percent": "10"
+			}]
+		}]
+	}, {
+		"title": "sectionEmployment",
+		"subsections": [{
+			"title": "subsectionCurrentEmployer",
+			"content": [{
+				"control": "Image",
+				"src": "./img/acron.png"
+			}, {
+				"control": "Link",
+				"text": "textAcron",
+				"href": "https://www.acron.com.tr/"
+			}]
+		}]
+	}]
 }

@@ -1,3 +1,64 @@
-<mvc:View controllerName="com.keremkayacan.base.controller.Content" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc">
-	<Text text="{i18n>appDescription}"/>
+<mvc:View controllerName="com.keremkayacan.base.controller.Content" xmlns="sap.uxap" xmlns:m="sap.m" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:layout="sap.ui.layout">
+	<ObjectPageLayout id="ObjectPageLayout" subSectionLayout="TitleOnLeft" showTitleInHeaderContent="true" sections="{/sections}">
+		<headerTitle>
+			<ObjectPageHeader objectImageShape="Circle" objectTitle="{/name}" objectSubtitle="{i18n>title}" objectImageAlt="{/name}"
+				id="ObjectPageLayoutHeaderTitle" isObjectTitleAlwaysVisible="false" isObjectSubtitleAlwaysVisible="false" isActionAreaAlwaysVisible="true"
+				showPlaceholder="true" objectImageURI="{/avatar}"></ObjectPageHeader>
+		</headerTitle>
+		<headerContent>
+			<layout:VerticalLayout width="50%">
+				<m:Link text="{/email}" href="mailto:{/email}"/>
+				<m:List items="{path: '/social'}">
+					<m:CustomListItem class="sapUiTinyMargin socialIcon">
+						<m:Image width="25px" src="{img}" tooltip="{href}" press="onImagePress"/>
+					</m:CustomListItem>
+				</m:List>
+			</layout:VerticalLayout>
+			<layout:VerticalLayout width="50%">
+				<m:Text text="{i18n>shortBio}" wrapping="true"/>
+			</layout:VerticalLayout>
+		</headerContent>
+		<sections>
+			<ObjectPageSection title="{ path : 'title', formatter : '.formatter.getI18nValue' }" subSections="{subsections}">
+				<subSections>
+					<ObjectPageSubSection title="{ path : 'title', formatter : '.formatter.getI18nValue' }">
+						<blocks>
+							<m:List items="{content}">
+								<m:CustomListItem>
+									<m:Label visible="{parts:[{path:'control'},{value:'ProgressIndicator'}],formatter:'.formatter.getVisible'}"
+										text="{ path : 'label', formatter : '.formatter.getI18nValue' }"/>
+									<m:ProgressIndicator visible="{parts:[{path:'control'},{value:'ProgressIndicator'}],formatter:'.formatter.getVisible'}"
+										percentValue="{percent}" showValue="false" displayOnly="true" state="Information" width="50%"/>
+									<m:Image visible="{parts:[{path:'control'},{value:'Image'}],formatter:'.formatter.getVisible'}" src="{src}"/>
+									<m:Link visible="{parts:[{path:'control'},{value:'Link'}],formatter:'.formatter.getVisible'}"
+										text="{ path : 'text', formatter : '.formatter.getI18nValue' }" target="_blank" href="{href}"/>
+								</m:CustomListItem>
+							</m:List>
+						</blocks>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+		</sections>
+		<!--		<ObjectPageSection title="{i18n>tecnhicalSkills}" subSections>
+			<subSections>
+				<ObjectPageSubSection title="SAP Core">
+					<m:Label text="ABAP"/>
+					<m:ProgressIndicator percentValue="99" showValue="false" displayOnly="true" state="Information"/>
+					<m:Label text="Smartforms"/>
+					<m:ProgressIndicator percentValue="99" showValue="false" displayOnly="true" state="Information"/>
+				</ObjectPageSubSection>
+				<ObjectPageSubSection title="Other">
+					<m:Text text="PHP"/>
+				</ObjectPageSubSection>
+			</subSections>
+		</ObjectPageSection>
+		<ObjectPageSection title="{i18n>employment}">
+			<subSections>
+				<ObjectPageSubSection>
+					<m:Text text="JOB"/>
+				</ObjectPageSubSection>
+			</subSections>
+		</ObjectPageSection>-->
+	</ObjectPageLayout>
 </mvc:View>

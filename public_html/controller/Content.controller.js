@@ -10,6 +10,10 @@ sap.ui.define([
 
 		onInit: function () {
 
+		},
+
+		onImagePress: function (oEvent) {
+			window.open(oEvent.getSource().getTooltip_Text(), "_blank");
 		}
 
 	});
