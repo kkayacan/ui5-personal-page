@@ -74,7 +74,7 @@
 			}, {
 				"control": "Link",
 				"text": "textAcron",
-				"href": "https://www.acron.com.tr/"
+				"href": "hrefAcron"
 			}]
 		}]
 	}]

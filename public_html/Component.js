@@ -10,6 +10,7 @@ sap.ui.define([
 		},
 
 		init: function () {
+			sap.ui.core.BusyIndicator.show();
 			// call the init function of the parent
 			UIComponent.prototype.init.apply(this, arguments);
 			document.title = this.getModel("i18n").getResourceBundle().getText("appTitle");

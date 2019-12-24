@@ -7,6 +7,10 @@ sap.ui.define([
 
 		onInit: function () {
 
+		},
+
+		onAfterRendering: function () {
+			sap.ui.core.BusyIndicator.hide();
 		}
 
 	});

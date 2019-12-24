@@ -25,14 +25,15 @@
 					<ObjectPageSubSection title="{ path : 'title', formatter : '.formatter.getI18nValue' }">
 						<blocks>
 							<m:List items="{content}">
-								<m:CustomListItem>
+								<m:CustomListItem class="listItem sapUiTinyMarginBottom">
 									<m:Label visible="{parts:[{path:'control'},{value:'ProgressIndicator'}],formatter:'.formatter.getVisible'}"
 										text="{ path : 'label', formatter : '.formatter.getI18nValue' }"/>
 									<m:ProgressIndicator visible="{parts:[{path:'control'},{value:'ProgressIndicator'}],formatter:'.formatter.getVisible'}"
 										percentValue="{percent}" showValue="false" displayOnly="true" state="Information" width="50%"/>
 									<m:Image visible="{parts:[{path:'control'},{value:'Image'}],formatter:'.formatter.getVisible'}" src="{src}"/>
 									<m:Link visible="{parts:[{path:'control'},{value:'Link'}],formatter:'.formatter.getVisible'}"
-										text="{ path : 'text', formatter : '.formatter.getI18nValue' }" target="_blank" href="{href}"/>
+										text="{ path : 'text', formatter : '.formatter.getI18nValue' }" target="_blank"
+										href="{ path : 'href', formatter : '.formatter.getI18nValue' }"/>
 								</m:CustomListItem>
 							</m:List>
 						</blocks>
@@ -40,25 +41,5 @@
 				</subSections>
 			</ObjectPageSection>
 		</sections>
-		<!--		<ObjectPageSection title="{i18n>tecnhicalSkills}" subSections>
-			<subSections>
-				<ObjectPageSubSection title="SAP Core">
-					<m:Label text="ABAP"/>
-					<m:ProgressIndicator percentValue="99" showValue="false" displayOnly="true" state="Information"/>
-					<m:Label text="Smartforms"/>
-					<m:ProgressIndicator percentValue="99" showValue="false" displayOnly="true" state="Information"/>
-				</ObjectPageSubSection>
-				<ObjectPageSubSection title="Other">
-					<m:Text text="PHP"/>
-				</ObjectPageSubSection>
-			</subSections>
-		</ObjectPageSection>
-		<ObjectPageSection title="{i18n>employment}">
-			<subSections>
-				<ObjectPageSubSection>
-					<m:Text text="JOB"/>
-				</ObjectPageSubSection>
-			</subSections>
-		</ObjectPageSection>-->
 	</ObjectPageLayout>
 </mvc:View>
