@@ -41,11 +41,19 @@
 				"percent": "99"
 			}, {
 				"control": "ProgressIndicator",
-				"label": "piSapscript",
+				"label": "piGateway",
+				"percent": "75"
+			}, {
+				"control": "ProgressIndicator",
+				"label": "piAdobeForms",
 				"percent": "10"
 			}, {
 				"control": "ProgressIndicator",
 				"label": "piWorkflow",
+				"percent": "10"
+			}, {
+				"control": "ProgressIndicator",
+				"label": "piSapscript",
 				"percent": "10"
 			}]
 		}, {
@@ -62,6 +70,48 @@
 				"control": "ProgressIndicator",
 				"label": "piWebdynpro",
 				"percent": "10"
+			}]
+		}, {
+			"title": "subsectionNonSap",
+			"content": [{
+				"control": "ProgressIndicator",
+				"label": "piJavascript",
+				"percent": "75"
+			}, {
+				"control": "ProgressIndicator",
+				"label": "piPhp",
+				"percent": "50"
+			}, {
+				"control": "ProgressIndicator",
+				"label": "piPython",
+				"percent": "25"
+			}, {
+				"control": "ProgressIndicator",
+				"label": "piJava",
+				"percent": "10"
+			}]
+		}, {
+			"title": "subsectionConceptual",
+			"content": [{
+				"control": "ProgressIndicator",
+				"label": "piAbapOO",
+				"percent": "90"
+			}, {
+				"control": "ProgressIndicator",
+				"label": "piHana",
+				"percent": "90"
+			}, {
+				"control": "ProgressIndicator",
+				"label": "piOle",
+				"percent": "90"
+			}, {
+				"control": "ProgressIndicator",
+				"label": "piWebService",
+				"percent": "75"
+			}, {
+				"control": "ProgressIndicator",
+				"label": "piODBC",
+				"percent": "75"
 			}]
 		}]
 	}, {
