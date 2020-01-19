@@ -2,6 +2,7 @@
 	"name": "Kerem Kayacan",
 	"email": "info@keremkayacan.com",
 	"avatar": "./img/avatar.jpg",
+	"startDate": "2008-07-01T09:00:00.000Z",
 	"social": [{
 		"img": "./img/sap.png",
 		"href": "https://people.sap.com/kerem.kayacan"
@@ -31,6 +32,8 @@
 		"title": "sectionSkills",
 		"subsections": [{
 			"title": "subsectionSapCore",
+			"showSideContent": false,
+			"control": "List",
 			"content": [{
 				"control": "ProgressIndicator",
 				"label": "piAbap",
@@ -58,6 +61,8 @@
 			}]
 		}, {
 			"title": "subsectionSapWeb",
+			"showSideContent": false,
+			"control": "List",
 			"content": [{
 				"control": "ProgressIndicator",
 				"label": "piFiori",
@@ -70,10 +75,24 @@
 				"control": "ProgressIndicator",
 				"label": "piWebdynpro",
 				"percent": "10"
+			}, {
+				"control": "ProgressIndicator",
+				"label": "piIts",
+				"percent": "10"
+			}, {
+				"control": "ProgressIndicator",
+				"label": "piCrmWeb",
+				"percent": "10"
 			}]
 		}, {
 			"title": "subsectionNonSap",
+			"showSideContent": false,
+			"control": "List",
 			"content": [{
+				"control": "ProgressIndicator",
+				"label": "piHtml",
+				"percent": "75"
+			}, {
 				"control": "ProgressIndicator",
 				"label": "piJavascript",
 				"percent": "75"
@@ -92,6 +111,8 @@
 			}]
 		}, {
 			"title": "subsectionConceptual",
+			"showSideContent": false,
+			"control": "List",
 			"content": [{
 				"control": "ProgressIndicator",
 				"label": "piAbapOO",
@@ -118,13 +139,88 @@
 		"title": "sectionEmployment",
 		"subsections": [{
 			"title": "subsectionCurrentEmployer",
+			"showSideContent": true,
+			"control": "List",
 			"content": [{
-				"control": "Image",
-				"src": "./img/acron.png"
-			}, {
-				"control": "Link",
+				"control": "ImageVBox",
+				"src": "./img/acron.png",
 				"text": "textAcron",
 				"href": "hrefAcron"
+			}]
+		}]
+	}, {
+		"title": "sectionSapProjects",
+		"subsections": [{
+			"title": "subsectionSapProjects",
+			"showSideContent": false,
+			"control": "List",
+			"content": [{
+				"control": "ImageVBox",
+				"src": "./img/hayat.png",
+				"text": "textHayat",
+				"href": "hrefHayat",
+				"title": "titleHayatProject",
+				"startDate": "2019-07-11T09:00:00.000Z",
+				"endDate": "2020-03-01T09:00:00.000Z",
+				"description": "descHayatProject"
+			}, {
+				"control": "ImageVBox",
+				"src": "./img/senpilic.png",
+				"text": "textSenpilic",
+				"href": "hrefSenpilic",
+				"title": "titleSenpilicProject",
+				"startDate": "2018-11-08T09:00:00.000Z",
+				"endDate": "2020-03-01T09:00:00.000Z",
+				"description": "descSenpilicProject"
+			}, {
+				"control": "ImageVBox",
+				"src": "./img/sedef.png",
+				"text": "textSedef",
+				"href": "hrefSedef",
+				"title": "titleSedefProject",
+				"startDate": "2019-10-07T09:00:00.000Z",
+				"endDate": "2020-01-01T09:00:00.000Z",
+				"description": "descSedefProject"
+			}]
+		}]
+	}, {
+		"title": "sectionEducation",
+		"subsections": [{
+			"title": "subsectionEducation",
+			"showSideContent": false,
+			"control": "List",
+			"content": [{
+				"control": "ImageVBox",
+				"src": "./img/iu.jpg",
+				"text": "textIU",
+				"href": "hrefIU",
+				"title": "titleIU",
+				"startDate": "2000-10-01T09:00:00.000Z",
+				"endDate": "2004-11-30T09:00:00.000Z"
+			}, {
+				"control": "ImageVBox",
+				"src": "./img/lal.jpg",
+				"text": "textLAL",
+				"href": "hrefLAL",
+				"title": "titleLAL",
+				"startDate": "1993-09-01T09:00:00.000Z",
+				"endDate": "2000-06-30T09:00:00.000Z"
+			}]
+		}]
+	}, {
+		"title": "sectionSideProjects",
+		"subsections": [{
+			"title": "subsectionSideProjects",
+			"showSideContent": true,
+			"control": "TileContainer",
+			"tiles": [{
+				"control": "Tile",
+				"title": "Title",
+				"info": "Info"
+			}, {
+				"control": "Tile",
+				"title": "Title",
+				"info": "Info"
 			}]
 		}]
 	}]

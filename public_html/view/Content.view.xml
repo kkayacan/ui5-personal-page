@@ -1,5 +1,5 @@
 <mvc:View controllerName="com.keremkayacan.base.controller.Content" xmlns="sap.uxap" xmlns:m="sap.m" xmlns:mvc="sap.ui.core.mvc"
-	xmlns:layout="sap.ui.layout">
+	xmlns:layout="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml">
 	<ObjectPageLayout id="ObjectPageLayout" subSectionLayout="TitleOnLeft" showTitleInHeaderContent="true" sections="{/sections}">
 		<headerTitle>
 			<ObjectPageHeader objectImageShape="Circle" objectTitle="{/name}" objectSubtitle="{i18n>title}" objectImageAlt="{/name}"
@@ -9,14 +9,16 @@
 		<headerContent>
 			<layout:VerticalLayout width="50%">
 				<m:Link text="{/email}" href="mailto:{/email}"/>
-				<m:List items="{path: '/social'}">
+				<m:List items="{path: '/social'}" backgroundDesign="Transparent" showSeparators="None">
 					<m:CustomListItem class="sapUiTinyMargin socialIcon">
 						<m:Image width="25px" src="{img}" tooltip="{href}" press="onImagePress"/>
 					</m:CustomListItem>
 				</m:List>
 			</layout:VerticalLayout>
 			<layout:VerticalLayout width="50%">
-				<m:Text text="{i18n>shortBio}" wrapping="true"/>
+				<m:Text xmlns:core="sap.ui.core" core:require="{ formatMessage: 'sap/base/strings/formatMessage' }"
+					text="{ parts: [ 'i18n>shortBio', { path: '/startDate', type: 'sap.ui.model.type.Date', formatOptions: { source: {pattern: 'yyyy-MM-ddTHH:mm:ss.SSSX'}, relative: true, relativeScale: 'auto' } } ], formatter: 'formatMessage' }"
+					wrapping="true"/>
 			</layout:VerticalLayout>
 		</headerContent>
 		<sections>
@@ -24,18 +26,7 @@
 				<subSections>
 					<ObjectPageSubSection title="{ path : 'title', formatter : '.formatter.getI18nValue' }">
 						<blocks>
-							<m:List items="{content}">
-								<m:CustomListItem class="listItem sapUiTinyMarginBottom">
-									<m:Label visible="{parts:[{path:'control'},{value:'ProgressIndicator'}],formatter:'.formatter.getVisible'}"
-										text="{ path : 'label', formatter : '.formatter.getI18nValue' }"/>
-									<m:ProgressIndicator visible="{parts:[{path:'control'},{value:'ProgressIndicator'}],formatter:'.formatter.getVisible'}"
-										percentValue="{percent}" showValue="false" displayOnly="true" state="Information" width="50%"/>
-									<m:Image visible="{parts:[{path:'control'},{value:'Image'}],formatter:'.formatter.getVisible'}" src="{src}"/>
-									<m:Link visible="{parts:[{path:'control'},{value:'Link'}],formatter:'.formatter.getVisible'}"
-										text="{ path : 'text', formatter : '.formatter.getI18nValue' }" target="_blank"
-										href="{ path : 'href', formatter : '.formatter.getI18nValue' }"/>
-								</m:CustomListItem>
-							</m:List>
+							<core:Fragment fragmentName="com.keremkayacan.base.view.Sections" type="XML"/>
 						</blocks>
 					</ObjectPageSubSection>
 				</subSections>
