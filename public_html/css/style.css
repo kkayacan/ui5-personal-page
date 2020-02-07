@@ -1,3 +1,7 @@
 .socialIcon {
     display: inline-block;
 }
+
+.shortBio {
+    max-width: 750px;
+}
