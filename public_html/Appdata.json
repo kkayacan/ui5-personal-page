@@ -32,104 +32,121 @@
 		"title": "sectionSkills",
 		"subsections": [{
 			"title": "subsectionSapCore",
-			"showSideContent": false,
 			"control": "List",
 			"content": [{
+				"class": "",
 				"control": "ProgressIndicator",
 				"label": "piAbap",
 				"percent": "99"
 			}, {
+				"class": "",
 				"control": "ProgressIndicator",
 				"label": "piSmartforms",
 				"percent": "99"
 			}, {
+				"class": "",
 				"control": "ProgressIndicator",
 				"label": "piGateway",
 				"percent": "75"
 			}, {
+				"class": "",
 				"control": "ProgressIndicator",
 				"label": "piAdobeForms",
 				"percent": "10"
 			}, {
+				"class": "",
 				"control": "ProgressIndicator",
 				"label": "piWorkflow",
 				"percent": "10"
 			}, {
+				"class": "",
 				"control": "ProgressIndicator",
 				"label": "piSapscript",
 				"percent": "10"
 			}]
 		}, {
 			"title": "subsectionSapWeb",
-			"showSideContent": false,
 			"control": "List",
 			"content": [{
+				"class": "",
 				"control": "ProgressIndicator",
 				"label": "piFiori",
 				"percent": "75"
 			}, {
+				"class": "",
 				"control": "ProgressIndicator",
 				"label": "piBsp",
 				"percent": "50"
 			}, {
+				"class": "",
 				"control": "ProgressIndicator",
 				"label": "piWebdynpro",
 				"percent": "10"
 			}, {
+				"class": "",
 				"control": "ProgressIndicator",
 				"label": "piIts",
 				"percent": "10"
 			}, {
+				"class": "",
 				"control": "ProgressIndicator",
 				"label": "piCrmWeb",
 				"percent": "10"
 			}]
 		}, {
 			"title": "subsectionNonSap",
-			"showSideContent": false,
 			"control": "List",
 			"content": [{
+				"class": "",
 				"control": "ProgressIndicator",
 				"label": "piHtml",
 				"percent": "75"
 			}, {
+				"class": "",
 				"control": "ProgressIndicator",
 				"label": "piJavascript",
 				"percent": "75"
 			}, {
+				"class": "",
 				"control": "ProgressIndicator",
 				"label": "piPhp",
 				"percent": "50"
 			}, {
+				"class": "",
 				"control": "ProgressIndicator",
 				"label": "piPython",
 				"percent": "25"
 			}, {
+				"class": "",
 				"control": "ProgressIndicator",
 				"label": "piJava",
 				"percent": "10"
 			}]
 		}, {
 			"title": "subsectionConceptual",
-			"showSideContent": false,
 			"control": "List",
 			"content": [{
+				"class": "",
 				"control": "ProgressIndicator",
 				"label": "piAbapOO",
 				"percent": "90"
 			}, {
+				"class": "",
 				"control": "ProgressIndicator",
 				"label": "piHana",
 				"percent": "90"
 			}, {
+				"class": "",
 				"control": "ProgressIndicator",
 				"label": "piOle",
 				"percent": "90"
 			}, {
+				"class": "",
 				"control": "ProgressIndicator",
 				"label": "piWebService",
 				"percent": "75"
 			}, {
+				"class": "",
 				"control": "ProgressIndicator",
 				"label": "piODBC",
 				"percent": "75"
@@ -139,9 +156,9 @@
 		"title": "sectionEmployment",
 		"subsections": [{
 			"title": "subsectionCurrentEmployer",
-			"showSideContent": true,
 			"control": "List",
 			"content": [{
+				"class": "",
 				"control": "ImageVBox",
 				"src": "./img/acron.png",
 				"text": "textAcron",
@@ -152,9 +169,9 @@
 		"title": "sectionSapProjects",
 		"subsections": [{
 			"title": "subsectionSapProjects",
-			"showSideContent": false,
 			"control": "List",
 			"content": [{
+				"class": "",
 				"control": "ImageVBox",
 				"src": "./img/hayat.png",
 				"text": "textHayat",
@@ -164,6 +181,7 @@
 				"endDate": "2020-03-01T09:00:00.000Z",
 				"description": "descHayatProject"
 			}, {
+				"class": "",
 				"control": "ImageVBox",
 				"src": "./img/senpilic.png",
 				"text": "textSenpilic",
@@ -173,6 +191,7 @@
 				"endDate": "2020-03-01T09:00:00.000Z",
 				"description": "descSenpilicProject"
 			}, {
+				"class": "",
 				"control": "ImageVBox",
 				"src": "./img/sedef.png",
 				"text": "textSedef",
@@ -187,9 +206,9 @@
 		"title": "sectionEducation",
 		"subsections": [{
 			"title": "subsectionEducation",
-			"showSideContent": false,
 			"control": "List",
 			"content": [{
+				"class": "",
 				"control": "ImageVBox",
 				"src": "./img/iu.jpg",
 				"text": "textIU",
@@ -198,6 +217,7 @@
 				"startDate": "2000-10-01T09:00:00.000Z",
 				"endDate": "2004-11-30T09:00:00.000Z"
 			}, {
+				"class": "",
 				"control": "ImageVBox",
 				"src": "./img/lal.jpg",
 				"text": "textLAL",
@@ -211,16 +231,42 @@
 		"title": "sectionSideProjects",
 		"subsections": [{
 			"title": "subsectionSideProjects",
-			"showSideContent": true,
-			"control": "TileContainer",
-			"tiles": [{
+			"control": "List",
+			"content": [{
+				"class": "horizontalListItem",
 				"control": "Tile",
-				"title": "Title",
-				"info": "Info"
+				"header": "abapRefH",
+				"subheader": "abap-reference",
+				"image": "./img/github.png",
+				"url": "https://github.com/kkayacan/abap-reference"
 			}, {
+				"class": "horizontalListItem",
 				"control": "Tile",
-				"title": "Title",
-				"info": "Info"
+				"header": "sapui5RefH",
+				"subheader": "sapui5-reference",
+				"image": "./img/github.png",
+				"url": "https://github.com/kkayacan/sapui5-reference"
+			}, {
+				"class": "horizontalListItem",
+				"control": "Tile",
+				"header": "abap2XlsxH",
+				"subheader": "abap2xlsx-simple",
+				"image": "./img/github.png",
+				"url": "https://github.com/kkayacan/abap2xlsx-simple"
+			}, {
+				"class": "horizontalListItem",
+				"control": "Tile",
+				"header": "filterableNewsH",
+				"subheader": "filterable-news",
+				"image": "./img/github.png",
+				"url": "https://github.com/kkayacan/filterable-news"
+			}, {
+				"class": "horizontalListItem",
+				"control": "Tile",
+				"header": "folderActionsH",
+				"subheader": "folder-actions",
+				"image": "./img/github.png",
+				"url": "https://github.com/kkayacan/folder-actions"
 			}]
 		}]
 	}]

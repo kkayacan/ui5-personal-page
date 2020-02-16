@@ -8,19 +8,7 @@
 				showPlaceholder="true" objectImageURI="{/avatar}"></ObjectPageHeader>
 		</headerTitle>
 		<headerContent>
-			<layout:VerticalLayout>
-				<m:Link text="{/email}" href="mailto:{/email}"/>
-			</layout:VerticalLayout>
-			<layout:VerticalLayout>
-				<m:Text class="shortBio sapUiTinyMargin" xmlns:core="sap.ui.core" core:require="{ formatMessage: 'sap/base/strings/formatMessage' }"
-					text="{ parts: [ 'i18n>shortBio', { path: '/startDate', type: 'sap.ui.model.type.Date', formatOptions: { source: {pattern: 'yyyy-MM-ddTHH:mm:ss.SSSX'}, relative: true, relativeScale: 'auto' } } ], formatter: 'formatMessage' }"
-					wrapping="true"/>
-				<m:List class="sapUiTinyMargin" items="{path: '/social'}" backgroundDesign="Transparent" showSeparators="None">
-					<m:CustomListItem class="sapUiTinyMargin socialIcon">
-						<m:Image width="25px" src="{img}" tooltip="{href}" press="onImagePress"/>
-					</m:CustomListItem>
-				</m:List>
-			</layout:VerticalLayout>
+			<core:Fragment fragmentName="com.keremkayacan.base.view.Header" type="XML"/>
 		</headerContent>
 		<sections>
 			<ObjectPageSection title="{ path : 'title', formatter : '.formatter.getI18nValue' }" subSections="{subsections}">

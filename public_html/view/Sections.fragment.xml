@@ -2,6 +2,9 @@
 	<List items="{content}" backgroundDesign="Transparent" showSeparators="None" growing="true" growingThreshold="6"
 		visible="{parts:[{path:'control'},{value:'List'}],formatter:'.formatter.getVisible'}">
 		<CustomListItem>
+			<customData>
+				<core:CustomData key="class" value="{class}" writeToDom="true"/>
+			</customData>
 			<layout:Grid containerQuery="true" defaultIndent="XL0 L0 M0 S0" defaultSpan="XL3 L3 M6 S12" hSpacing="1" vSpacing="0">
 				<Label text="{ path : 'label', formatter : '.formatter.getI18nValue' }">
 					<layoutData>
@@ -46,6 +49,18 @@
 						class="sapUiTinyMarginBottom"/>
 					<Text text="{ path : 'description', formatter : '.formatter.getI18nValue' }"/>
 				</VBox>
+				<GenericTile header="{ path : 'header', formatter : '.formatter.getI18nValue' }" subheader="{subheader}" imageDescription="{url}"
+					frameType="TwoByOne" press="onTilePress">
+					<layoutData>
+						<layout:GridData span="XL2 L3 M4 S6" visibleXL="{parts:[{path:'control'},{value:'Tile'}],formatter:'.formatter.getVisible'}"
+							visibleL="{parts:[{path:'control'},{value:'Tile'}],formatter:'.formatter.getVisible'}"
+							visibleM="{parts:[{path:'control'},{value:'Tile'}],formatter:'.formatter.getVisible'}"
+							visibleS="{parts:[{path:'control'},{value:'Tile'}],formatter:'.formatter.getVisible'}"/>
+					</layoutData>
+					<TileContent>
+						<ImageContent src="{image}"/>
+					</TileContent>
+				</GenericTile>
 			</layout:Grid>
 		</CustomListItem>
 	</List>

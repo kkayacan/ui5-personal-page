@@ -1,0 +1,15 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml">
+	<layout:VerticalLayout>
+		<Link text="{/email}" href="mailto:{/email}"/>
+	</layout:VerticalLayout>
+	<layout:VerticalLayout>
+		<Text class="shortBio sapUiTinyMargin" xmlns:core="sap.ui.core" core:require="{ formatMessage: 'sap/base/strings/formatMessage' }"
+			text="{ parts: [ 'i18n>shortBio', { path: '/startDate', type: 'sap.ui.model.type.Date', formatOptions: { source: {pattern: 'yyyy-MM-ddTHH:mm:ss.SSSX'}, relative: true, relativeScale: 'auto' } } ], formatter: 'formatMessage' }"
+			wrapping="true"/>
+		<List class="sapUiTinyMargin" items="{path: '/social'}" backgroundDesign="Transparent" showSeparators="None">
+			<CustomListItem class="sapUiTinyMargin horizontalListItem">
+				<Image width="25px" src="{img}" tooltip="{href}" press="onImagePress"/>
+			</CustomListItem>
+		</List>
+	</layout:VerticalLayout>
+</core:FragmentDefinition>

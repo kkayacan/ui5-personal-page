@@ -14,6 +14,10 @@ sap.ui.define([
 
 		onImagePress: function (oEvent) {
 			window.open(oEvent.getSource().getTooltip_Text(), "_blank");
+		},
+
+		onTilePress: function (oEvent) {
+			window.open(oEvent.getSource().getImageDescription(), "_blank");
 		}
 
 	});

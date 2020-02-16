@@ -1,4 +1,8 @@
-.socialIcon {
+.horizontalListItem {
+    display: inline-block;
+}
+
+[data-class=horizontalListItem] {
     display: inline-block;
 }
 
