@@ -94,6 +94,45 @@
 				"percent": "10"
 			}]
 		}, {
+			"title": "subsectionSapModule",
+			"control": "List",
+			"content": [{
+				"class": "",
+				"control": "ProgressIndicator",
+				"label": "piRetail",
+				"percent": "75"
+			}, {
+				"class": "",
+				"control": "ProgressIndicator",
+				"label": "piHcm",
+				"percent": "75"
+			}, {
+				"class": "",
+				"control": "ProgressIndicator",
+				"label": "piMm",
+				"percent": "50"
+			}, {
+				"class": "",
+				"control": "ProgressIndicator",
+				"label": "piSd",
+				"percent": "50"
+			}, {
+				"class": "",
+				"control": "ProgressIndicator",
+				"label": "piFi",
+				"percent": "50"
+			}, {
+				"class": "",
+				"control": "ProgressIndicator",
+				"label": "piPp",
+				"percent": "10"
+			}, {
+				"class": "",
+				"control": "ProgressIndicator",
+				"label": "piCrm",
+				"percent": "10"
+			}]
+		}, {
 			"title": "subsectionNonSap",
 			"control": "List",
 			"content": [{
@@ -162,7 +201,9 @@
 				"control": "ImageVBox",
 				"src": "./img/acron.png",
 				"text": "textAcron",
-				"href": "hrefAcron"
+				"href": "hrefAcron",
+				"title": "titleEmployment",
+				"startDate": ""
 			}]
 		}]
 	}, {
@@ -200,6 +241,36 @@
 				"startDate": "2019-10-07T09:00:00.000Z",
 				"endDate": "2020-01-01T09:00:00.000Z",
 				"description": "descSedefProject"
+			}, {
+				"class": "",
+				"control": "ImageVBox",
+				"src": "./img/ittifak.png",
+				"text": "textIttifak",
+				"href": "hrefIttifak",
+				"title": "titleIttifakProject",
+				"startDate": "2016-11-01T09:00:00.000Z",
+				"endDate": "2018-03-01T09:00:00.000Z",
+				"description": "descIttifakProject"
+			}, {
+				"class": "",
+				"control": "ImageVBox",
+				"src": "./img/sarar.png",
+				"text": "textSarar",
+				"href": "hrefSarar",
+				"title": "titleSararProject",
+				"startDate": "2016-11-01T09:00:00.000Z",
+				"endDate": "2017-11-01T09:00:00.000Z",
+				"description": "descSararProject"
+			}, {
+				"class": "",
+				"control": "ImageVBox",
+				"src": "./img/ozsut.png",
+				"text": "textOzsut",
+				"href": "hrefOzsut",
+				"title": "titleOzsutProject",
+				"startDate": "2016-05-01T09:00:00.000Z",
+				"endDate": "2016-11-01T09:00:00.000Z",
+				"description": "descOzsutProject"
 			}]
 		}]
 	}, {
