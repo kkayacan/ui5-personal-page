@@ -372,6 +372,25 @@
 				"endDate": "2009-03-01T09:00:00.000Z",
 				"description": "descPasabahceProject"
 			}]
+		}, {
+			"title": "subsectionSupportProjects",
+			"control": "List",
+			"content": [{
+				"class": "horizontalListItem",
+				"control": "ImgTile",
+				"image": "./img/isken.png",
+				"url": "http://www.isken.com.tr/default.aspx"
+			}, {
+				"class": "horizontalListItem",
+				"control": "ImgTile",
+				"image": "./img/a101.png",
+				"url": "https://www.a101.com.tr/"
+			}, {
+				"class": "horizontalListItem",
+				"control": "ImgTile",
+				"image": "./img/cimsa.png",
+				"url": "https://www.cimsa.com.tr/tr"
+			}]
 		}]
 	}, {
 		"title": "sectionEducation",
@@ -381,7 +400,7 @@
 			"content": [{
 				"class": "",
 				"control": "ImageVBox",
-				"src": "./img/iu.jpg",
+				"src": "./img/iu.png",
 				"text": "textIU",
 				"href": "hrefIU",
 				"title": "titleIU",
@@ -390,7 +409,7 @@
 			}, {
 				"class": "",
 				"control": "ImageVBox",
-				"src": "./img/lal.jpg",
+				"src": "./img/lal.png",
 				"text": "textLAL",
 				"href": "hrefLAL",
 				"title": "titleLAL",

@@ -32,9 +32,7 @@
 							visibleM="{parts:[{path:'control'},{value:'ImageVBox'}],formatter:'.formatter.getVisible'}"
 							visibleS="{parts:[{path:'control'},{value:'ImageVBox'}],formatter:'.formatter.getVisible'}"/>
 					</layoutData>
-					<Image src="{src}" height="60px" class="sapUiTinyMarginBottom"></Image>
-					<Link text="{ path : 'text', formatter : '.formatter.getI18nValue' }" target="_blank"
-						href="{ path : 'href', formatter : '.formatter.getI18nValue' }"></Link>
+					<Image src="{src}" height="100px" class="sapUiTinyMarginBottom"></Image>
 				</VBox>
 				<VBox class="sapUiMediumMarginBottom">
 					<layoutData>
@@ -43,6 +41,8 @@
 							visibleM="{parts:[{path:'control'},{value:'ImageVBox'}],formatter:'.formatter.getVisible'}"
 							visibleS="{parts:[{path:'control'},{value:'ImageVBox'}],formatter:'.formatter.getVisible'}"/>
 					</layoutData>
+					<Link text="{ path : 'text', formatter : '.formatter.getI18nValue' }" target="_blank"
+						href="{ path : 'href', formatter : '.formatter.getI18nValue' }"></Link>
 					<Title level="H3" text="{ path : 'title', formatter : '.formatter.getI18nValue' }" class="sapUiTinyMarginBottom"/>
 					<Text visible="{= ${startDate} !== ''}"
 						text="{ path: 'startDate', type: 'sap.ui.model.type.Date', formatOptions: { source: {pattern: 'yyyy-MM-ddTHH:mm:ss.SSSX'}, format: 'yMMMM' } } - { path: 'endDate', type: 'sap.ui.model.type.Date', formatOptions: { source: {pattern: 'yyyy-MM-ddTHH:mm:ss.SSSX'}, format: 'yMMMM' } }"
@@ -60,6 +60,15 @@
 					<TileContent>
 						<ImageContent src="{image}"/>
 					</TileContent>
+				</GenericTile>
+				<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop" backgroundImage="{image}" imageDescription="{url}" frameType="OneByOne"
+					press="onTilePress">
+					<layoutData>
+						<layout:GridData span="XL2 L3 M4 S6" visibleXL="{parts:[{path:'control'},{value:'ImgTile'}],formatter:'.formatter.getVisible'}"
+							visibleL="{parts:[{path:'control'},{value:'ImgTile'}],formatter:'.formatter.getVisible'}"
+							visibleM="{parts:[{path:'control'},{value:'ImgTile'}],formatter:'.formatter.getVisible'}"
+							visibleS="{parts:[{path:'control'},{value:'ImgTile'}],formatter:'.formatter.getVisible'}"/>
+					</layoutData>
 				</GenericTile>
 			</layout:Grid>
 		</CustomListItem>
