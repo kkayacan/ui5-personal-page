@@ -1,0 +1,7 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<ResponsivePopover title="{Name}" class="sapUiPopupWithPadding" placement="Bottom">
+		<content>
+			<Text text="Copyright © 2020 Kerem Kayacan" width="15em"/>
+		</content>
+	</ResponsivePopover>
+</core:FragmentDefinition>

@@ -109,12 +109,7 @@
 			}, {
 				"class": "",
 				"control": "ProgressIndicator",
-				"label": "piMm",
-				"percent": "50"
-			}, {
-				"class": "",
-				"control": "ProgressIndicator",
-				"label": "piSd",
+				"label": "piLo",
 				"percent": "50"
 			}, {
 				"class": "",
@@ -383,13 +378,48 @@
 			}, {
 				"class": "horizontalListItem",
 				"control": "ImgTile",
+				"image": "./img/caffenero.png",
+				"url": "https://caffenero.com/tr/tr/"
+			}, {
+				"class": "horizontalListItem",
+				"control": "ImgTile",
+				"image": "./img/komsufirin.png",
+				"url": "https://www.komsufirin.com.tr/"
+			}, {
+				"class": "horizontalListItem",
+				"control": "ImgTile",
 				"image": "./img/a101.png",
 				"url": "https://www.a101.com.tr/"
 			}, {
 				"class": "horizontalListItem",
 				"control": "ImgTile",
+				"image": "./img/cci.png",
+				"url": "https://www.cci.com.tr/"
+			}, {
+				"class": "horizontalListItem",
+				"control": "ImgTile",
 				"image": "./img/cimsa.png",
 				"url": "https://www.cimsa.com.tr/tr"
+			}, {
+				"class": "horizontalListItem",
+				"control": "ImgTile",
+				"image": "./img/borcelik.png",
+				"url": "https://www.borcelik.com/"
+			}, {
+				"class": "horizontalListItem",
+				"control": "ImgTile",
+				"image": "./img/abb.png",
+				"url": "https://new.abb.com/tr"
+			}, {
+				"class": "horizontalListItem",
+				"control": "ImgTile",
+				"image": "./img/dogan.png",
+				"url": "https://www.doganholding.com.tr/"
+			}, {
+				"class": "horizontalListItem",
+				"control": "ImgTile",
+				"image": "./img/efes.png",
+				"url": "https://www.anadoluefes.com/"
 			}]
 		}]
 	}, {

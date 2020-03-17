@@ -1,5 +1,5 @@
 <core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:layout="sap.ui.layout">
-	<List items="{content}" backgroundDesign="Transparent" showSeparators="None" growing="true" growingThreshold="7"
+	<List items="{content}" backgroundDesign="Transparent" showSeparators="None" growing="true" growingThreshold="6"
 		visible="{parts:[{path:'control'},{value:'List'}],formatter:'.formatter.getVisible'}">
 		<CustomListItem>
 			<customData>
@@ -61,8 +61,7 @@
 						<ImageContent src="{image}"/>
 					</TileContent>
 				</GenericTile>
-				<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop" backgroundImage="{image}" imageDescription="{url}" frameType="OneByOne"
-					press="onTilePress">
+				<GenericTile class="sapUiTinyMarginBottom" backgroundImage="{image}" imageDescription="{url}" frameType="OneByOne" press="onTilePress">
 					<layoutData>
 						<layout:GridData span="XL2 L3 M4 S6" visibleXL="{parts:[{path:'control'},{value:'ImgTile'}],formatter:'.formatter.getVisible'}"
 							visibleL="{parts:[{path:'control'},{value:'ImgTile'}],formatter:'.formatter.getVisible'}"
