@@ -194,9 +194,9 @@
 			"content": [{
 				"class": "",
 				"control": "ImageVBox",
-				"src": "./img/acron.png",
-				"text": "textAcron",
-				"href": "hrefAcron",
+				"src": "./img/arteis.png",
+				"text": "textArteis",
+				"href": "hrefArteis",
 				"title": "titleEmployment",
 				"startDate": ""
 			}]
